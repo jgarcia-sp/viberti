@@ -1,2 +1,2 @@
-# viberti
-Repository for the viberti algorithm
+# viterbi
+Repository for the viterbi algorithm
