@@ -1,0 +1,8 @@
+Análisis FreeLing para HMM -emisión y transición-. Usar Viterbi -salida: token, categoria, probabilidad-.
+Categorias gramaticales Freeling.
+Usar Earley.
+Corpus Brown
+    polisemia media tokens
+    polisemia media de los tipos
+    palabra más ambigua y sentidos que puede tener
+Construir un dendograma. Calcular similaridad semántica entre ellos usando PPMI y distancia coseno.
