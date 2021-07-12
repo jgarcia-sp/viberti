@@ -16,7 +16,9 @@ print(cadena.split())
 ['Hola,', '¿cómo', 'estás?']
 print(cadena.split(" "))
 ['Hola,', '¿cómo', 'estás?']
-#cadena.split() y cadena.split(" ") no arroja diferencia alguna.
+#cadena.split() y cadena.split(" ") no arroja diferencia alguna a priori. No obstante, opera de la siguiente
+#forma: .split() devuelve una lista de palabras que se dividen por defecto por cualquier espacio en blanco, siendo .split(" ") solo cortado por espacios generados
+#conscientemente a través del uso de la barra espaciadora (cancer de pregunta gracias a la programación).
 #2.
 #A strings, listas, tuplas, diccionarios. Te devuelve la información invertida.
 #3.
@@ -36,5 +38,22 @@ a.remove("in")
 print(a)
 ['newly', 'formed', 'bland', 'ideas', 'are', 'inexpressible', 'an', 'infuriating', 'way']
 #4.
-b=a
+a='newly formed bland ideas are inexpressible in an infuriating way'
+a=a.split()
+a.remove("in")
+print(a)
+b=" ".join(a)
 print(b)
+resultado=""
+
+
+for cadena in a:
+    resultado=resultado+" "+cadena
+resultado=resultado[1:]
+print(resultado)
+
+for cadena in a:
+    if resultado == ""
+        resultado=cadena
+    else:resultado=resultado+" "+cadena
+print(resultado)
