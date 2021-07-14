@@ -12,8 +12,11 @@ Con esta función ponemos la ruta del directorio como variable (ruta)
 y listas todos los documentos dentro del directorio
 """
     datos=os.listdir(ruta)
+    for ps in corpora:
+        if ps ==  datos.append:
+    datos=[]
     return datos
 
-corpora("C:\\")
+corpora("C:/Users/Jonathan/Desktop/viterbi/resources/Corpus")
 #Al declarar esto nos dará la información alojada en C en ordenador.
-print(time.time())
+print(datos)

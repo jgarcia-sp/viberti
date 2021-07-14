@@ -16,10 +16,12 @@ Recomiendo encarecidamente que planteen el problema primero con lápiz y papel (
 que hacer, qué resultado se espera, etc.) y sólo después emprender la escritura de código.
 5.- Remitir un archivo de texto con la lista de las palabras que serían nombres propios y una copia 
 de la sesión del idle que genera esa lista"""
-texto=open("C:/Users/Adrián/Desktop/Asignaturas/Computacional - 9-6/2020-2021/Ejercicios/Fortunata_y_Jacinta.txt", mode="r", encoding="utf-8")
+texto=open("C:/Users/Jonathan/Desktop/viterbi/resources/Fortunata_y_Jacinta.txt", mode="r", encoding="utf-8")
 texto=texto.read()
 import re #Ahora hemos importado el módulo para trabjar
 #con Expresiones Regulares (regular expressions)
-re.findall("[A-Z][a-záéíóú]+",texto) #re.findall toma la expresión regular y
+m = re.findall("(?<![.])[¿ !(\"'<-][ÁÉÍÓÚA-Z][aáéíóúa-z]+",texto)
+#re.findall toma la expresión regular y
 #busca aquellos patrones coincidentes con dicha expresión regular en la variable
 #seleccionada - texto en este caso - y nos devuelve una lista.
+print(m[:10])
