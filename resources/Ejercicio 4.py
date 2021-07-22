@@ -12,7 +12,10 @@ Con esta función ponemos la ruta del directorio como variable (ruta)
 y listas todos los documentos dentro del directorio
 """
     datos=os.listdir(ruta)
-    for ps in ruta:
+    cadena = ""
+    for ps in datos:
+        cadena += ps
+        
         if type(ps) == type("str"):
             datosseleccionados=[]
             datosseleccionados.append(ps)
