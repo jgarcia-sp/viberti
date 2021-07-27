@@ -1,5 +1,5 @@
 import time
-print(time.time())
+"""print(time.time())"""
 import os
 #Se importa el módulo os que sirve para trabajr con los directorios y carpetas del ordenador.
 def corpora(ruta):
@@ -12,16 +12,18 @@ Con esta función ponemos la ruta del directorio como variable (ruta)
 y listas todos los documentos dentro del directorio
 """
     datos=os.listdir(ruta)
-    cadena = ""
     for ps in datos:
-        cadena += ps
+        #la variable ps tiene el valor de: la iteración primera -en este momento- dentro de la lista que contiene
+        #las cadenas de los nombres de los archivos dentro del directorio alojados previamente en datos.
+        #La variable cadena contiene una cadena vacia.
+        #La variable lectura contiene nada porque no sé qué poner.
+        lectura=open(ruta+ps,"r")
+        lectura1=lectura.read()
+        resultado=lectura1
+        return resultado
         
-        if type(ps) == type("str"):
-            datosseleccionados=[]
-            datosseleccionados.append(ps)
-            return datosseleccionados
 
-print(corpora("C:/Users/Jonathan/Desktop/viterbi/resources/Corpus"))
+print(corpora("C:/Users/Jonathan/Desktop/viterbi/resources/Corpus/"))
 #Al declarar esto nos dará la información alojada en C en ordenador.
 
-print(time.time())
+"""print(time.time())"""
